@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div id="contenedor_principal">
+	    <header id="header">
+	        <h1><strong>Encuesta Covid-19</strong></h1>
+            <p id="encuesta">Te invitamos a participar de esta encuesta</p>
+        </header>
+        
+        <form id="survey-form" action="#">
+
+            <div class="contenedor">
+            <label id="name-label" for="name">Nombre:</label>
+            <input type="text" name="name" id="name" class="campo" placeholder="Ingrese su nombre" required/>
+            </div>
+
+            <div class="contenedor">
+            <label id="name-label" for="name">Correo Electrónico:</label>
+            <input type="text" name="name" id="name" class="campo" placeholder="Ingrese su e-mail" required/>    
+            </div> 
+
+            <div class="contenedor">
+            <label id="name-label" for="name">Télefono:</label>
+            <input type="text" name="name" id="name" class="campo" placeholder="Ingrese su teléfono" required/>
+            </div>   
+
+            <div class="contenedor">
+                <label id="number-label" for="number">Edad</label>
+                <input type="number" name="age"id="number" min="15" max="95" class="campo" placeholder="Edad"/>
+            </div>    
+
+            <div class="contenedor_control">
+                <p>Ocupación:</p>
+                    <select id="dropdown" name="role" class="control" required>
+                    <option disabled selected value>Seleccione su ocupación</option>
+                    <option value="student">Estudiante</option>
+                    <option value="job">Empleado</option>
+                    <option value="learner">Independiente</option>
+                    <option value="preferNo">Prefiero no indicar</option>
+                    <option value="other">Otro</option>
+                    </select>
+            </div>
+
+            <div class="contenedor_radio">
+                <p>Le han realizado el exámen para determiar si tiene Covid-19</p>
+                <label>
+                  <input name="user-recommend" value="definitely" type="radio" class="radio" checked/>Si</label>
+                  <input name="user-recommend" value="definitely" type="radio" class="radio" checke/>No</label>
+            </div>        
+                 <p>Si su respuesta es No, continue con la encuesta</p> 
+                
+                 <div class="contenedor">
+                    <p>
+                      Seleccione si ha presentado alguno de los siguientes sintomas?
+                      <span class="contenedor_checkbox"></span>
+                    </p>              
+                    <label>
+                        <input name="prefer" value="front-end-projects" type="checkbox" class="checkbox"/>Fiebre</label>
+                    </label>
+                    
+                    <label>
+                        <input name="prefer" value="front-end-projects" type="checkbox" class="checkbox"/>Malestar General</label>
+                    </label>
+
+                    <label>
+                            <input name="prefer" value="front-end-projects" type="checkbox" class="contenedor_checkbox"/>Tos</label>
+                    </label>
+
+                    <label>
+                        <input name="prefer" value="front-end-projects" type="checkbox" class="contenedor_checkbox"/>Dificultad Respiratoria</label>
+                    </label>
+                        
+                    <label>
+                        <input name="prefer" value="front-end-projects" type="checkbox" class="contenedor_checkbox"/>Congestión Nasal</label>
+                    </label>
+                    </div>         
+              
+                  <div class="contenedor_2">
+                    <p>Informe si ha presentado otros sintomas</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Ingrese su comentario aqui..."></textarea>
+                  </div>
+
+                  <div class="contenedor_boton">
+                    <button type="submit" id="submit" class="contenedor_boton">Enviar</button>
+                 </div>
+            </form>
+               
+                <p>Muchas gracias por participar en la encuesta !!!</p>  
+                
+      </select>
+    </div>
+  
+</body>
+</html>
+
+
